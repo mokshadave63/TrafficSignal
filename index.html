@@ -13,15 +13,15 @@
 
     <!-- Navigation -->
     <nav>
-        <ul>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#how-it-works">How It Works</a></li>
-            <li><a href="#live-demo">Live Demo</a></li>
-            <li><a href="#team">Our Team</a></li>
-            <li><a href="#why-our-model">Why Our Model</a></li>
-            <li><a href="#pricing">Pricing</a></li>
-        </ul>
-    </nav>
+      <ul class="header">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#live-demo">Live Demo</a></li>
+          <li><a href="#team">Our Team</a></li>
+          <li><a href="#why-our-model">Why Our Model</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+      </ul>
+  </nav>
 <!-- Theme Toggle Button -->
 <!--<button id="theme-toggle" onclick="toggleTheme()">Toggle Theme</button>-->
 
@@ -70,11 +70,12 @@
     <section id="live-demo">
         <h2>Live Demo</h2>
         <div id="simulation">
-            <button onclick="startSimulation()">Start Simulation</button>
-            <div id="traffic-simulation">Traffic Simulation Area</div>
-            <h1>Live Video Feed</h1>
-            <iframe width="640" height="360" src="https://www.youtube.com/embed/21X5lGlDOfg" frameborder="0" allowfullscreen></iframe>
-        </div>
+          <div class="button_container">
+              <button onclick=startSimulation() class="btnn"><span>Start Simulation</span></button>
+          <div id="traffic-simulation">Traffic Simulation Area</div>
+          <h1>Live Video Feed</h1>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/5WN2PJ_Qxjs?si=EKyd-OaLl2aLxauU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      </div>
     </section>
 
     <!-- Our Team Section -->

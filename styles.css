@@ -6,7 +6,55 @@ body {
     background-color: #f8f9fa;
     color: #343a40;
 }
-
+/*header(navbar)*/
+.header{
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header ul { 
+    margin: 120px auto 0; 
+    padding: 0; 
+    list-style: none; 
+    width: 300px;
+    text-align: center;
+  }
+  .header  li { 
+    display: table-cell; 
+    position: relative; 
+  }
+  .header  a {
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.15em;
+    
+    display: inline-block;
+    padding: 15px 20px;
+    position: relative;
+  }
+  .header a:after {    
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #fff;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+  }
+  .header a:hover:after { 
+    width: 100%; 
+    left: 0; 
+  }
+  @media screen and (max-height: 300px) {
+      ul {
+          margin-top: 40px;
+      }
+  }
+  
 section {
     padding: 50px 30px; /* Reduce padding */
     text-align: center;
@@ -279,25 +327,72 @@ header img, #how-it-works img {
 }
 
 .pricing8 .btn-danger-gradiant {
-  background: #ff4d7e;
-  background: -webkit-linear-gradient(legacy-direction(to right), #ff4d7e 0%, #ff6a5b 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#ff4d7e), to(#ff6a5b));
-  background: -webkit-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-  background: -o-linear-gradient(left, #ff4d7e 0%, #ff6a5b 100%);
-  background: linear-gradient(to right, #ff4d7e 0%, #ff6a5b 100%);
+  background: #343a40;
+  background: -webkit-linear-gradient(legacy-direction(to right), #343a40 0%, #686565 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#343a40), to(#686565));
+  background: -webkit-linear-gradient(left, #343a40 0%, #686565 100%);
+  background: -o-linear-gradient(left, #343a40 0%, #686565 100%);
+  background: linear-gradient(to right, #343a40 0%, #686565 100%);
 }
 
 .pricing8 .btn-danger-gradiant:hover {
   background: #ff6a5b;
-  background: -webkit-linear-gradient(legacy-direction(to right), #ff6a5b 0%, #ff4d7e 100%);
-  background: -webkit-gradient(linear, left top, right top, from(#ff6a5b), to(#ff4d7e));
-  background: -webkit-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-  background: -o-linear-gradient(left, #ff6a5b 0%, #ff4d7e 100%);
-  background: linear-gradient(to right, #ff6a5b 0%, #ff4d7e 100%);
+  background: -webkit-linear-gradient(legacy-direction(to right), #686565 0%, #343a40 100%);
+  background: -webkit-gradient(linear, left top, right top, from(#686565), to(#343a40));
+  background: -webkit-linear-gradient(left, #686565 0%, #343a40 100%);
+  background: -o-linear-gradient(left, #686565 0%, #343a40 100%);
+  background: linear-gradient(to right, #686565 0%, #343a40 100%);
 }
 
 
-
+.btnn {
+    border: none;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 15px;
+    background-color: #222;
+    padding: 17px 60px;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.20);
+  }
+  
+  .btnn span {
+    position: relative; 
+    z-index: 1;
+  }
+  .btnn:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 490%;
+    width: 140%;
+    background: #a1adf4;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  }
+  .btnn:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  }
+  
+  .link {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+  
+  .link a {
+    color: #000;
+    font-size: 25px; 
+  }
 /* Default Theme (Light) 
 :root {
     --background-color: #f8f9fa;
